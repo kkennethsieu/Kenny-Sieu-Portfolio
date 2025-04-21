@@ -1,0 +1,9 @@
+function SectionTitle({ title }) {
+  return (
+    <h1 className="uppercase border-b-2 border-gray-200 py-3 w-[20%] text-xl font-bold ">
+      {title}
+    </h1>
+  );
+}
+
+export default SectionTitle;
