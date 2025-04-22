@@ -3,11 +3,14 @@ import MainRight from "./MainRight";
 
 function MainLayout() {
   return (
-    <div className="flex w-full mt-20 mx-auto h-screen relative">
-      <div className="w-[40%] fixed left-56">
-        <MainLeft />
+    <div className="flex justify-center ml-[5%]">
+      <div className="max-w-2xl">
+        <div className="sticky top-10">
+          <MainLeft />
+        </div>
       </div>
-      <div className="w-[40%] ml-[48%]">
+
+      <div className="max-w-2xl flex-1">
         <MainRight />
       </div>
     </div>

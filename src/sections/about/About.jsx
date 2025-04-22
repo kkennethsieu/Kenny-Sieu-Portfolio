@@ -2,19 +2,28 @@ import SectionTitle from "../../components/SectionTitle";
 
 function About() {
   return (
-    <div>
+    <div id="about" className="pt-16">
       <SectionTitle title="About me" />
-      <div className="py-8 text-sm space-y-3 leading-relaxed">
+      <div className="py-8 text-sm space-y-5 leading-relaxed">
         <p>
-          Hi! I'm Alvin, a full-stack developer who started coding in 2023.
-          Since then, I've built streaming platforms, blogs, and e-commerce
-          sites. Whether it’s front-end finesse or back-end logic, I love
-          bringing ideas to life on the web.
+          Hi, I'm <strong>Kenny Sieu</strong> — a passionate{" "}
+          <strong>Full-Stack Developer</strong> with a love for creating
+          engaging and dynamic websites. Coding isn't just a job for me; it's
+          something I truly enjoy. I thrive on bringing{" "}
+          <strong>frontend concepts</strong> to life and constantly push myself
+          to learn and explore new technologies.
         </p>
         <p>
-          When I’m not coding, you’ll find me playing Dota 2, cooking up new
-          recipes, or streaming on Kick. Let's connect—I'd love to help with
-          your next website or API project!
+          Throughout my journey, I've worked on a variety of projects, each one
+          helping me improve and grow as a developer.
+        </p>
+        <p>
+          When I'm not coding, you'll likely find me{" "}
+          <strong>snowboarding</strong> or out at a{" "}
+          <strong>music festival</strong> with my friends. I’m also a huge fan
+          of exploring new places around the city and finding hidden gems.
+          Whether it's a local café or an underground event, I love discovering
+          what makes a place unique and vibrant.
         </p>
       </div>
     </div>

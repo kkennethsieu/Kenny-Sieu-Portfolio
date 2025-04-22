@@ -2,7 +2,7 @@ import SectionTitle from "../../components/SectionTitle";
 
 function Contact() {
   return (
-    <div>
+    <div id="contact" className="pt-16">
       <SectionTitle title="Contact" />
       <form className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
         <label className="flex flex-col">

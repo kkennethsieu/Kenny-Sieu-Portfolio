@@ -1,7 +1,7 @@
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-
 import ProjectTag from "./ProjectTag";
+import ProjectLinks from "./ProjectLinks";
 
 function ProjectItem({
   logoImg,
@@ -12,23 +12,21 @@ function ProjectItem({
   tags,
 }) {
   return (
-    <div className="flex flex-col gap-4 text-sm">
-      <span className="flex gap-2 items-center font-semibold ">
-        <img src={logoImg} className="w-8" />
-        <h3>{projectTitle}</h3>
-      </span>
-      <p>{description}</p>
-      <div>
-        <span className="flex gap-2 items-center">
-          <FaLink />
-          <a href={webLink}>{webLink}</a>
-        </span>
-        <span className="flex gap-2 items-center">
-          <FaGithub />
-          <a href={gitLink}>{gitLink}</a>
-        </span>
+    <div className="flex flex-col gap-2 text-sm rounded-lg py-3">
+      <div className="flex items-center gap-2">
+        <img
+          src={logoImg}
+          alt={`${projectTitle} logo`}
+          className="w-[8%] rounded-full"
+        />
+        <h3 className="text-xl font-semibold">{projectTitle}</h3>
       </div>
-      <div className="flex gap-3">
+
+      <p className="text-gray-600 dark:text-gray-300">{description}</p>
+
+      <ProjectLinks gitLink={gitLink} webLink={webLink} />
+
+      <div className="flex gap-3 mt-4">
         {tags.map((tag) => (
           <ProjectTag tag={tag} key={tag.name} />
         ))}
