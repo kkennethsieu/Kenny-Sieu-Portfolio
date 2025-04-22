@@ -12,8 +12,8 @@ function Projects() {
           logoImg="/raveWalletTrans.png"
           projectTitle="Kenny Sieu | Portfolio Website"
           description="A professional portfolio website showcasing my projects and skills as a Full-Stack Developer. Built with Next.js, Tailwind CSS, and Shadcn/UI."
-          webLink="#"
-          gitLink="#"
+          webLink="https://kenny-sieu-portfolio.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/Kenny-Sieu-Portfolio"
           tags={[
             { icon: <RiNextjsLine />, name: "React" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
