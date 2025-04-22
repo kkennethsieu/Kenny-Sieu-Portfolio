@@ -37,8 +37,8 @@ function Projects() {
           logoImg="/swirlLogo.png"
           projectTitle="SmoothieSwirl | Smoothie Ordering App"
           description="SmoothieSwirl allows users to browse, customize, and order smoothies with ease. Choose ingredients, view nutritional info, and complete the order with a simple interface."
-          webLink="#"
-          gitLink="#"
+          webLink="https://smoothie-swirl.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/SmoothieSwirl"
           tags={[
             { icon: <RiNextjsLine />, name: "React" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
