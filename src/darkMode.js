@@ -10,11 +10,9 @@ export function applySavedTheme() {
 
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
-  } else if (savedTheme === "light") {
-    document.documentElement.classList.remove("dark");
   } else {
-    // No theme saved yet — default to dark
-    document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
+    // Default to light mode if no theme is saved
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   }
 }
