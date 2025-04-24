@@ -9,7 +9,7 @@ function Projects() {
       <SectionTitle title="Recent Projects" />
       <div className="py-8 space-y-6">
         <ProjectItem
-          logoImg="/raveWalletTrans.png"
+          logoImg="/portfolioBlack.png"
           projectTitle="Kenny Sieu | Portfolio Website"
           description="A professional portfolio website showcasing my projects and skills as a Full-Stack Developer. Built with Next.js, Tailwind CSS, and Shadcn/UI."
           webLink="https://kenny-sieu-portfolio.vercel.app/"
@@ -61,8 +61,8 @@ function Projects() {
           logoImg="/blogLogo.png"
           projectTitle="TravelToday | Personal Blog"
           description="A personal blog where I write about tech and web development. Search and read posts, and enjoy a minimalist design with a Markdown-powered backend."
-          webLink="#"
-          gitLink="#"
+          webLink="https://travel-today-one.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/TravelToday"
           tags={[
             { icon: <RiNextjsLine />, name: "Next.js" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
