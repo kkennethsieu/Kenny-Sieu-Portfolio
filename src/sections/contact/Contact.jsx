@@ -61,7 +61,7 @@ function Contact() {
             <span className="text-red-500 text-sm">{errors.email.message}</span>
           )}
         </label>
-        <label className="flex flex-col md:col-span-2">
+        <label className="flex flex-col col-span-2">
           <span className="mb-2 text-sm font-medium text-gray-700">
             Message
           </span>

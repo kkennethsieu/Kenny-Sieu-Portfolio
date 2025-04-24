@@ -6,7 +6,7 @@ import Technologies from "../sections/technologies/Technologies";
 
 function MainRight() {
   return (
-    <div className="py-10 px-10">
+    <div className="py-10 px-10 xl:pr-32">
       <About />
       {/* <Experience /> */}
       <Projects />

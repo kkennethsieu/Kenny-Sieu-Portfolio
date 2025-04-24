@@ -12,7 +12,7 @@ function ProjectItem({
   tags,
 }) {
   return (
-    <div className="flex flex-col gap-2 text-sm rounded-lg py-3">
+    <div className="flex flex-col gap-2 text-[.88rem] rounded-lg py-3">
       <div className="flex items-center gap-2">
         <img
           src={logoImg}
@@ -22,7 +22,9 @@ function ProjectItem({
         <h3 className="text-xl font-semibold">{projectTitle}</h3>
       </div>
 
-      <p className="text-gray-600 dark:text-gray-300">{description}</p>
+      <p className="text-gray-700 dark:text-gray-300 text-[.91rem] leading-relaxed">
+        {description}
+      </p>
 
       <ProjectLinks gitLink={gitLink} webLink={webLink} />
 

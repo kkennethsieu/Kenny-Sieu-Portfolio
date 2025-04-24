@@ -7,3 +7,7 @@
 /* bg-gradient-to-br from-[#f5f7fa] via-[#c3cfe2] to-[#e2ebf0]  REGULAR MODE*/
 
 /* bg-gradient-to-br from-[#f0ece2] via-[#d6ccc2] to-[#e3d5ca] GOOD NETURAL */
+
+html {
+  scroll-behavior: smooth;
+}
