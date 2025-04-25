@@ -32,7 +32,7 @@ function Contact() {
         className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8"
       >
         <label className="flex flex-col">
-          <span className="mb-2 text-sm font-medium text-gray-700">Name</span>
+          <span className="mb-2 text-sm font-medium">Name</span>
           <input
             {...register("name", { required: "Name is required" })}
             type="text"
@@ -44,7 +44,7 @@ function Contact() {
           )}
         </label>
         <label className="flex flex-col">
-          <span className="mb-2 text-sm font-medium text-gray-700">Email</span>
+          <span className="mb-2 text-sm font-medium">Email</span>
           <input
             {...register("email", {
               required: "Email is required",
@@ -62,9 +62,7 @@ function Contact() {
           )}
         </label>
         <label className="flex flex-col col-span-2">
-          <span className="mb-2 text-sm font-medium text-gray-700">
-            Message
-          </span>
+          <span className="mb-2 text-sm font-medium">Message</span>
           <textarea
             {...register("message", { required: "Message is required" })}
             rows="5"
