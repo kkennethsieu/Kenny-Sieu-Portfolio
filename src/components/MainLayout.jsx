@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 function MainLayout() {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-center lg:ml-[5%] gap-6 lg:px-10 px-10 mt-12 ">
+    <div className="flex flex-col lg:flex-row lg:justify-center lg:ml-[5%] gap-6 lg:px-10 md:px-4 mt-12 ">
       {/* Left Section */}
       <div className="flex-1 w-full lg:max-w-lg xl:max-w-2xl">
         <motion.div

@@ -55,7 +55,7 @@ function Technologies() {
   return (
     <div id="technologies" className="pt-8">
       <SectionTitle title="Technologies" />
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 pt-8">
+      <div className="grid grid-cols-3 gap-10 pt-8 lg:grid-cols-4">
         {techStack.map((tech) => (
           <TechnologyItem
             key={tech.title}
