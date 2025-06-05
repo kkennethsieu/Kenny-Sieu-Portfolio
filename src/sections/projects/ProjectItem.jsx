@@ -28,7 +28,7 @@ function ProjectItem({
 
       <ProjectLinks gitLink={gitLink} webLink={webLink} />
 
-      <div className="flex gap-3 mt-4">
+      <div className="grid grid-cols-4 gap-3 mt-4">
         {tags.map((tag) => (
           <ProjectTag tag={tag} key={tag.name} />
         ))}
