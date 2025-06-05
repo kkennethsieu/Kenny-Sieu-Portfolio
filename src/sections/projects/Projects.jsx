@@ -72,19 +72,6 @@ function Projects() {
         />
 
         <ProjectItem
-          logoImg="/blogLogo.png"
-          projectTitle="TravelToday | Personal Blog"
-          description="TravelToday is a blog where I share my experiences and thoughts on the places I’ve visited, including what I liked about each location. It features a login system, allowing authenticated users to add and delete their posts."
-          webLink="https://travel-today-one.vercel.app/"
-          gitLink="https://github.com/kkennethsieu/TravelToday"
-          tags={[
-            { icon: <RiReactjsLine />, name: "React" },
-            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-            { icon: <RiSupabaseFill />, name: "Supabase" },
-          ]}
-        />
-
-        <ProjectItem
           logoImg="/raveWalletTrans.png"
           projectTitle="RaveWallet | Festival Expense Tracker"
           description="RaveWallet is an app that allows users to sign up and log in to track their expenses at festivals. It helps you manage and monitor your spending while enjoying your events."
