@@ -29,21 +29,21 @@ function Contact() {
       <SectionTitle title="Contact" />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8"
+        className="grid grid-cols-1 gap-6 p-8 md:grid-cols-2"
       >
-        <label className="flex flex-col">
+        <label className="flex flex-col col-span-2 sm:col-span-1">
           <span className="mb-2 text-sm font-medium">Name</span>
           <input
             {...register("name", { required: "Name is required" })}
             type="text"
             placeholder="Your name"
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
           />
           {errors.name && (
-            <span className="text-red-500 text-sm">{errors.name.message}</span>
+            <span className="text-sm text-red-500">{errors.name.message}</span>
           )}
         </label>
-        <label className="flex flex-col">
+        <label className="flex flex-col col-span-2 sm:col-span-1">
           <span className="mb-2 text-sm font-medium">Email</span>
           <input
             {...register("email", {
@@ -55,10 +55,10 @@ function Contact() {
             })}
             type="email"
             placeholder="you@example.com"
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
           />
           {errors.email && (
-            <span className="text-red-500 text-sm">{errors.email.message}</span>
+            <span className="text-sm text-red-500">{errors.email.message}</span>
           )}
         </label>
         <label className="flex flex-col col-span-2">
@@ -67,15 +67,15 @@ function Contact() {
             {...register("message", { required: "Message is required" })}
             rows="5"
             placeholder="Write your message here..."
-            className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none"
           />
           {errors.message && (
-            <span className="text-red-500 text-sm">
+            <span className="text-sm text-red-500">
               {errors.message.message}
             </span>
           )}
         </label>
-        <div className="col-span-2 flex justify-end">
+        <div className="flex justify-end col-span-2">
           {successMessage ? (
             <div className="rounded-lg">
               <strong>{successMessage}</strong>
@@ -83,7 +83,7 @@ function Contact() {
           ) : (
             <button
               type="submit"
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium px-6 py-2 rounded-lg shadow-md transition duration-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-indigo-500 transform hover:scale-105"
+              className="px-6 py-2 font-medium text-white transition duration-300 transform rounded-lg shadow-md bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-gradient-to-r hover:from-blue-500 hover:to-indigo-500 hover:scale-105"
             >
               Send Message
             </button>
