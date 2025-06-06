@@ -1,5 +1,5 @@
 import { RiNextjsFill, RiReactjsLine, RiSupabaseFill } from "react-icons/ri";
-import { SiTailwindcss, SiVite, SiMui } from "react-icons/si";
+import { SiTailwindcss, SiMui } from "react-icons/si";
 import { FaChartBar, FaNodeJs } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { BsStripe } from "react-icons/bs";
@@ -30,6 +30,7 @@ function Projects() {
           description="CedarGlide Wax is an e-commerce web store dedicated to snowboarding wax products. It features a clean UI for browsing products, adding items to cart, and a smooth checkout experience. Built with modern React tools, it provides responsive design and efficient state management."
           webLink="https://cedar-glide-wax.vercel.app/"
           gitLink="https://github.com/kkennethsieu/CedarGlideWax_Front"
+          figmaLink="https://www.figma.com/design/GdllyQknqxn2aK5Fs1cCue/CedarWax-Co.?node-id=25-1340&t=7Uk68eaEZ3JYBhgA-1"
           tags={[
             { icon: <RiReactjsLine />, name: "React" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },

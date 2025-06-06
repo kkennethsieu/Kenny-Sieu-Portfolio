@@ -9,6 +9,7 @@ function ProjectItem({
   description,
   gitLink,
   webLink,
+  figmaLink,
   tags,
 }) {
   return (
@@ -26,7 +27,7 @@ function ProjectItem({
         {description}
       </p>
 
-      <ProjectLinks gitLink={gitLink} webLink={webLink} />
+      <ProjectLinks gitLink={gitLink} webLink={webLink} figmaLink={figmaLink} />
 
       <div className="grid grid-cols-3 gap-3 mt-4 sm:grid-cols-4">
         {tags.map((tag) => (
