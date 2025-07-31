@@ -1,5 +1,5 @@
 import { RiNextjsFill, RiReactjsLine, RiSupabaseFill } from "react-icons/ri";
-import { SiTailwindcss, SiMui } from "react-icons/si";
+import { SiTailwindcss, SiMui, SiRadixui } from "react-icons/si";
 import { FaChartBar, FaNodeJs } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { BsStripe } from "react-icons/bs";
@@ -23,7 +23,25 @@ function Projects() {
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
           ]}
         />
-
+        <ProjectItem
+          logoImg="/fitSyncLogo.png"
+          projectTitle="Fit Sync | Workout Tracker App"
+          description="FitSync is a full-featured fitness tracking web app that helps users monitor workouts, personal records, and exercise trends. It offers insightful analytics, workout summaries, and a personalized dashboard to motivate progress and improve fitness routines — all with a clean, responsive, and dark-mode-friendly design."
+          webLink="https://fit-sync-now.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/FitSync"
+          figmaLink="https://www.figma.com/design/2MzjcKcpAVKgqiz6PdCGHQ/FitSync?node-id=0-1&p=f"
+          tags={[
+            { icon: <RiNextjsFill />, name: "Next.js" },
+            { icon: <RiNextjsFill />, name: "Auth.js" },
+            { icon: <RiReactjsLine />, name: "React" },
+            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+            { icon: <RiSupabaseFill />, name: "Supabase" },
+            { icon: <FaChartBar />, name: "Recharts" },
+            { icon: <FaNodeJs />, name: "Node.js" },
+            { icon: <SiMui />, name: "Material UI" },
+            { icon: <IoLogoFigma />, name: "Figma" },
+          ]}
+        />
         <ProjectItem
           logoImg="/cedarGlideLogo.svg"
           projectTitle="CedarGlide Wax | E-Commerce Store"
@@ -44,7 +62,6 @@ function Projects() {
             { icon: <IoLogoFigma />, name: "Figma" },
           ]}
         />
-
         <ProjectItem
           logoImg="/jobquestLogo.png"
           projectTitle="JobQuest | Job Application Tracker"
@@ -58,7 +75,6 @@ function Projects() {
             { icon: <FaChartBar />, name: "Recharts" },
           ]}
         />
-
         <ProjectItem
           logoImg="/swirlLogo.png"
           projectTitle="SmoothieSwirl | Smoothie Ordering App"
@@ -69,20 +85,6 @@ function Projects() {
             { icon: <RiReactjsLine />, name: "React" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
             { icon: <RiSupabaseFill />, name: "Supabase" },
-          ]}
-        />
-
-        <ProjectItem
-          logoImg="/raveWalletTrans.png"
-          projectTitle="RaveWallet | Festival Expense Tracker"
-          description="RaveWallet is an app that allows users to sign up and log in to track their expenses at festivals. It helps you manage and monitor your spending while enjoying your events."
-          webLink="https://rave-wallet.vercel.app/"
-          gitLink="https://github.com/kkennethsieu/rave_wallet"
-          tags={[
-            { icon: <RiNextjsFill />, name: "Next.js" },
-            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-            { icon: <RiSupabaseFill />, name: "Supabase" },
-            { icon: <IoLogoFigma />, name: "Figma" },
           ]}
         />
       </div>
