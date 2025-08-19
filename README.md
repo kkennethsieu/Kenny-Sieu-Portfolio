@@ -20,7 +20,7 @@ All screenshots are located in `public/screenshots/`.
 
 ### Technologies
 
-<img src="public/screenshots/tech_ss.png" width="401"/>
+<img src="public/screenshots/tech_ss.png" width="400"/>
 
 </div>
 
