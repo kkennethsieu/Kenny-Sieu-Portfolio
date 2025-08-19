@@ -51,7 +51,7 @@ portfolio/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/kkennethsieu/portfolio.git
 ```
 
 2. **Install dependencies:**
