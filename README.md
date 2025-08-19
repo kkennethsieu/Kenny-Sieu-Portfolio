@@ -20,7 +20,7 @@ All screenshots are located in `public/screenshots/`.
 
 ### Technologies
 
-<img src="public/screenshots/tech_ss.png" width="400"/>
+<img src="public/screenshots/tech_ss.png" width="401"/>
 
 </div>
 
@@ -41,8 +41,8 @@ portfolio/
 
 ### ✅ Prerequisites
 
-* Node.js (v18 or later recommended)
-* npm or yarn
+- Node.js (v18 or later recommended)
+- npm or yarn
 
 ---
 
@@ -75,16 +75,14 @@ Runs on: `http://localhost:5173`
 
 ## 🛠 Features
 
-* 🌗 Light & Dark mode toggle
-* 🖼 Responsive design for mobile & desktop
-* 📂 Sections for projects, skills, and contact info
+- 🌗 Light & Dark mode toggle
+- 🖼 Responsive design for mobile & desktop
+- 📂 Sections for projects, skills, and contact info
 
 ---
-
 
 ## 🙋‍♂️ Author
 
 Your Name
 🧑‍💻 GitHub: \[[https://github.com/kkennethsieu](https://github.com/kkennethsieu)]
 🌐 Portfolio: \[[https://kenny-sieu-portfolio.vercel.app/](https://kenny-sieu-portfolio.vercel.app/)]
-
