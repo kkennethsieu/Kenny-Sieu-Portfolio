@@ -1,9 +1,7 @@
+import { motion } from "motion/react";
 import About from "../sections/about/About";
-import Contact from "../sections/contact/Contact";
-import Experience from "../sections/experience/Experience";
 import Projects from "../sections/projects/Projects";
 import Technologies from "../sections/technologies/Technologies";
-import { motion } from "motion/react";
 
 function MainRight() {
   return (
@@ -39,9 +37,7 @@ function MainRight() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <Contact />
-      </motion.div>
+      ></motion.div>
     </div>
   );
 }

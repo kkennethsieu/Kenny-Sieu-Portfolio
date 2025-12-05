@@ -1,4 +1,4 @@
-# **Portfolio 🌐**
+ # **Portfolio 🌐**
 
 A modern, responsive personal portfolio app to showcase projects, skills, and contact information. Includes light and dark mode for a personalized experience.
 

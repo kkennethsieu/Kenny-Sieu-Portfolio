@@ -11,25 +11,49 @@ function ProjectItem({
   webLink,
   figmaLink,
   tags,
+  highlights,
 }) {
   return (
-    <div className="flex flex-col gap-2 text-[.88rem] rounded-lg py-3">
+    <div className="flex flex-col gap-2 py-3 rounded-lg">
       <div className="flex items-center gap-2">
         <img
           src={logoImg}
           alt={`${projectTitle} logo`}
-          className="w-[8%] rounded-full"
+          className="rounded-full w-[8%]"
         />
-        <h3 className="text-xl font-semibold">{projectTitle}</h3>
+        <h3 className="font-semibold text-xl">{projectTitle}</h3>
       </div>
 
-      <p className="text-gray-700 dark:text-gray-300 text-[.91rem] leading-relaxed">
-        {description}
-      </p>
+      <div className="space-y-4">
+        <div>
+          <p className="mb-1 font-semibold text-gray-700 dark:text-gray-300">
+            Description
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            {description}
+          </p>
+        </div>
 
-      <ProjectLinks gitLink={gitLink} webLink={webLink} figmaLink={figmaLink} />
+        {highlights && (
+          <div>
+            <p className="mb-2 font-semibold text-gray-700 dark:text-gray-300">
+              Highlights
+            </p>
+            <ul className="space-y-1 text-gray-700 dark:text-gray-300 text-sm leading-relaxed list-disc list-inside">
+              {highlights?.map((highlight, index) => (
+                <li key={index}>{highlight}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <ProjectLinks
+          gitLink={gitLink}
+          webLink={webLink}
+          figmaLink={figmaLink}
+        />
+      </div>
 
-      <div className="grid grid-cols-3 gap-3 mt-4 sm:grid-cols-4">
+      <div className="gap-3 grid grid-cols-3 sm:grid-cols-4 mt-4">
         {tags.map((tag) => (
           <ProjectTag tag={tag} key={tag.name} />
         ))}

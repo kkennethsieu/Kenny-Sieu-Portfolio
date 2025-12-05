@@ -1,6 +1,14 @@
 import { RiNextjsFill, RiReactjsLine, RiSupabaseFill } from "react-icons/ri";
-import { SiTailwindcss, SiMui, SiRadixui } from "react-icons/si";
-import { FaChartBar, FaNodeJs } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiMui,
+  SiRadixui,
+  SiReactquery,
+  SiFlask,
+  SiSqlite,
+  SiRabbitmq,
+} from "react-icons/si";
+import { FaChartBar, FaNodeJs, FaPython, FaDocker } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { BsStripe } from "react-icons/bs";
 
@@ -11,7 +19,34 @@ function Projects() {
   return (
     <div id="projects" className="pt-16">
       <SectionTitle title="Recent Projects" />
-      <div className="py-8 space-y-6">
+      <div className="space-y-6 py-8">
+        <ProjectItem
+          logoImg="/playReview.png"
+          projectTitle="Play Review | Microservice Game Review App"
+          description="GameReview is a full-stack, Dockerized microservices platform built to demonstrate a scalable and modular architecture for game enthusiasts. The platform allows users to explore games, post and manage reviews, like other users’ reviews, and receive real-time notifications."
+          highlights={[
+            "User/Auth Service – Built with Node.js, Express, and Bcrypt, this service handles user authentication with JWT tokens, enabling secure login, logout, and account management.",
+            "Game Catalog Service – Implemented in Python and Flask, this service scrapes game data from external sources to provide an up-to-date catalog of games.",
+            "Reviews Service – Using Node.js and Express, users can create, read, update, and delete (CRUD) reviews, building the core of the community interaction.",
+            "Likes Service – Allows users to like reviews, built with Node.js and Express, enabling social interactions between users.",
+            "Notification Service – Sends real-time notifications for likes and other review actions, leveraging Node.js and Express for event-driven communication.",
+          ]}
+          webLink="https://play-review.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/PlayReview-Overview"
+          tags={[
+            { icon: <RiReactjsLine />, name: "React" },
+            { icon: <SiReactquery />, name: "React Query" },
+            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+            { icon: <IoLogoFigma />, name: "Figma" },
+            { icon: <FaNodeJs />, name: "Node.JS" },
+            { icon: <RiReactjsLine />, name: "Bcrypt" },
+            { icon: <FaPython />, name: "Python" },
+            { icon: <SiFlask />, name: "Flask" },
+            { icon: <SiSqlite />, name: "SQLite" },
+            { icon: <FaDocker />, name: "Docker" },
+            { icon: <SiRabbitmq />, name: "RabbitMQ" },
+          ]}
+        />
         <ProjectItem
           logoImg="/portfolioBlack.png"
           projectTitle="Kenny Sieu | Portfolio Website"
