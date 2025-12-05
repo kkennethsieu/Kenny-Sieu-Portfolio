@@ -1,3 +1,7 @@
+//COMPONENTS
+import ProjectItem from "./ProjectItem";
+import SectionTitle from "../../components/SectionTitle";
+//ICONS
 import { RiNextjsFill, RiReactjsLine, RiSupabaseFill } from "react-icons/ri";
 import {
   SiTailwindcss,
@@ -11,9 +15,7 @@ import {
 import { FaChartBar, FaNodeJs, FaPython, FaDocker } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { BsStripe } from "react-icons/bs";
-
-import ProjectItem from "./ProjectItem";
-import SectionTitle from "../../components/SectionTitle";
+import { TbBrandMysql } from "react-icons/tb";
 
 function Projects() {
   return (
@@ -47,6 +49,29 @@ function Projects() {
             { icon: <SiRabbitmq />, name: "RabbitMQ" },
           ]}
         />
+
+        <ProjectItem
+          logoImg="/music-management-logo.png"
+          projectTitle="Music Festival Management System | Database Design Project"
+          description="A full-stack music festival management system with a relational database backend and a React-based frontend. The system manages festivals, stages, artists, staff, vendors, and sponsors, providing CRUD operations and real-time scheduling features."
+          highlights={[
+            "Festival & Stage Management — Developed backend schema and APIs to handle multiple festivals, their stages, schedules, capacities, and event details.",
+            "Artist & Performance Scheduling — Implemented CRUD functionality for artists, performances, and stage assignments across multi-day festivals.",
+            "Staff, Vendor & Sponsor Operations — Built relational structures and frontend interfaces to track staff roles, shifts, vendor booths, and sponsor contributions.",
+            "Full-Stack Features — Created a React frontend that interacts with a backend API (Node.js / Express or Flask) to perform real-time data updates and queries.",
+            "Database Design & Normalization — Designed a fully normalized relational schema supporting complex queries, foreign keys, junction tables, and sample datasets.",
+          ]}
+          webLink="https://kenny-sieu-portfolio.vercel.app/"
+          gitLink="https://github.com/kkennethsieu/Music-Festival-Management"
+          tags={[
+            { icon: <RiReactjsLine />, name: "React" },
+            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+            { icon: <IoLogoFigma />, name: "Figma" },
+            { icon: <FaNodeJs />, name: "Node.JS" },
+            { icon: <TbBrandMysql />, name: "MySQL" },
+          ]}
+        />
+
         <ProjectItem
           logoImg="/portfolioBlack.png"
           projectTitle="Kenny Sieu | Portfolio Website"
