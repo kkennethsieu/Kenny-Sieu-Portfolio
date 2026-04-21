@@ -30,16 +30,16 @@ function MainLeft() {
 
         <div className="flex flex-wrap justify-center md:justify-start gap-3">
           <span className="bg-indigo-100 px-4 py-1.5 rounded-full font-medium text-indigo-800 text-sm">
-            Full-Stack Developer
+            iOS Developer
           </span>
           <span className="bg-emerald-100 px-4 py-1.5 rounded-full font-medium text-emerald-800 text-sm">
-            UI/UX Enthusiast
+            Full-Stack Developer
           </span>
           <span className="bg-yellow-100 px-4 py-1.5 rounded-full font-medium text-yellow-800 text-sm">
             Problem Solver
           </span>
           <span className="bg-pink-100 px-4 py-1.5 rounded-full font-medium text-pink-800 text-sm">
-            React Developer
+            UI/UX Enthusiast
           </span>
           <span className="bg-sky-100 px-4 py-1.5 rounded-full font-medium text-sky-800 text-sm">
             Creative Developer
@@ -47,9 +47,9 @@ function MainLeft() {
         </div>
 
         <p className="max-w-2xl text-gray-700 dark:text-gray-200 text-lg md:text-left text-center leading-relaxed">
-          💻 I’m passionate about bringing ideas to life with a perfect blend of
-          design and code. Whether it's a clean UI or a solid backend, I focus
-          on building things that look good and work even better. 🧑‍💻
+          CS student at Oregon State University, building iOS apps and
+          full-stack platforms with a focus on clean code and great user
+          experiences.
         </p>
 
         <SectionNavBar />
