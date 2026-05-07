@@ -15,6 +15,7 @@ import {
   SiFirebase,
   SiGooglecloud,
 } from "react-icons/si";
+import { Clapperboard } from "lucide-react";
 
 import { FaChartBar, FaNodeJs, FaPython, FaDocker } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
@@ -26,6 +27,25 @@ function Projects() {
     <div id="projects" className="pt-16">
       <SectionTitle title="Recent Projects" />
       <div className="space-y-6 py-8">
+        <ProjectItem
+          logoImg={Clapperboard}
+          projectTitle="Scenerio | AI Video Editor - Hackathon Winner"
+          description="Scenerio is a self-improving AI video editor built at a hackathon, winning 1st place in the Gemini API track. It automatically generates a rough cut from raw footage and lets users guide edits in real time through a conversational interface."
+          highlights={[
+            "AI Pipeline: Powered by Gemini (multimodal) to analyze raw footage and generate automatic rough cuts with title cards, background music, and contextual visuals.",
+            "Conversational Editing: Users approve, deny, or redirect AI edits in real time via a chat interface, creating a feedback loop where the editor improves with each iteration.",
+            "Video Processing: FFmpeg and Pillow handle frame extraction, splicing, and rendering; Remotion drives programmatic video composition.",
+            "Backend: FastAPI server with Pydantic for typed request validation and Pytest for test coverage.",
+            "Frontend: React UI with real-time edit preview and a conversational sidebar for directing the AI.",
+          ]}
+          webLink="https://github.com/chengenli9/BeaverHacks2026"
+          gitLink="https://github.com/chengenli9/BeaverHacks2026"
+          tags={[
+            { icon: <RiReactjsLine />, name: "React" },
+            { icon: <FaPython />, name: "Python" },
+            { icon: <SiFlask />, name: "FastAPI" },
+          ]}
+        />
         <ProjectItem
           logoImg="/strideLogo.png"
           projectTitle="Stride | iOS Run Tracking App"

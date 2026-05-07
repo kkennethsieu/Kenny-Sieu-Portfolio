@@ -4,7 +4,7 @@ import ProjectTag from "./ProjectTag";
 import ProjectLinks from "./ProjectLinks";
 
 function ProjectItem({
-  logoImg,
+  logoImg: LogoImg,
   projectTitle,
   description,
   gitLink,
@@ -16,11 +16,15 @@ function ProjectItem({
   return (
     <div className="flex flex-col gap-2 py-3 rounded-lg">
       <div className="flex items-center gap-2">
-        <img
-          src={logoImg}
-          alt={`${projectTitle} logo`}
-          className="rounded-full w-[8%]"
-        />
+        {typeof LogoImg == "string" ? (
+          <img
+            src={LogoImg}
+            alt={`${projectTitle} logo`}
+            className="rounded-full w-[8%]"
+          />
+        ) : (
+          <LogoImg size={24} />
+        )}
         <h3 className="font-semibold text-xl">{projectTitle}</h3>
       </div>
 
