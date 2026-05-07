@@ -98,26 +98,6 @@ function Projects() {
         />
 
         <ProjectItem
-          logoImg="/fitSyncLogo.png"
-          projectTitle="Fit Sync | Workout Tracker App"
-          description="FitSync is a full-featured fitness tracking web app that helps users monitor workouts, personal records, and exercise trends. It offers insightful analytics, workout summaries, and a personalized dashboard to motivate progress and improve fitness routines — all with a clean, responsive, and dark-mode-friendly design."
-          webLink="https://fit-sync-now.vercel.app/"
-          gitLink="https://github.com/kkennethsieu/FitSync"
-          figmaLink="https://www.figma.com/design/2MzjcKcpAVKgqiz6PdCGHQ/FitSync?node-id=0-1&p=f"
-          tags={[
-            { icon: <RiNextjsFill />, name: "Next.js" },
-            { icon: <RiNextjsFill />, name: "Auth.js" },
-            { icon: <RiReactjsLine />, name: "React" },
-            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-            { icon: <RiSupabaseFill />, name: "Supabase" },
-            { icon: <FaChartBar />, name: "Recharts" },
-            { icon: <FaNodeJs />, name: "Node.js" },
-            { icon: <SiMui />, name: "Material UI" },
-            { icon: <IoLogoFigma />, name: "Figma" },
-          ]}
-        />
-
-        <ProjectItem
           logoImg="/cedarGlideLogo.svg"
           projectTitle="CedarGlide Wax | E-Commerce Store"
           description="CedarGlide Wax is an e-commerce web store dedicated to snowboarding wax products. It features a clean UI for browsing products, adding items to cart, and a smooth checkout experience. Built with modern React tools, it provides responsive design and efficient state management."
