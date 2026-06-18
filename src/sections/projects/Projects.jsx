@@ -28,6 +28,32 @@ function Projects() {
       <SectionTitle title="Recent Projects" />
       <div className="space-y-6 py-8">
         <ProjectItem
+          logoImg="/scoutLogo.png"
+          projectTitle="Scout | Photography Location Discovery App"
+          description="Scout is a photography location discovery app that helps photographers find exactly where to take their next shot. Think of it like Yelp, but for photo spots. Instead of showing you a landmark and calling it a day, Scout gives you the exact vantage point, real photos taken from that angle, and reviews from photographers who've actually been there. Scout is live on the App Store."
+          highlights={[
+            "Full SwiftUI iOS app with a custom tab bar, interactive maps via MapKit, and an @Observable architecture throughout.",
+            "FastAPI backend deployed on Google Cloud Run with Firestore for data, Cloud Storage for photos, and Secret Manager for API keys.",
+            "Geospatial spot discovery using Haversine distance calculations and bounding box queries to efficiently rank and filter locations by proximity.",
+            "Multi path creation flow supporting four entry points: photo upload with EXIF extraction, GPS drop, tapping an existing spot, or manual pin placement.",
+            "25 meter radius deduplication with auto debounced queries to prevent duplicate spots and reduce unnecessary API calls.",
+            "Firebase Auth with Sign in with Apple, Google Sign-In, and nonce based token validation across iOS and backend.",
+            "CI/CD pipeline through GitHub Actions handling automated tests and deployment to Cloud Run via Artifact Registry.",
+            "Seeded 400+ spots at launch using a data pipeline built on Google Places API and Unsplash to solve the cold start problem.",
+          ]}
+          webLink="https://testflight.apple.com/join/13yA34fw"
+          gitLink="https://github.com/kkennethsieu/Scout-Overview"
+          tags={[
+            { icon: <SiSwift />, name: "Swift" },
+            { icon: <SiSwift />, name: "SwiftUI" },
+            { icon: <SiFirebase />, name: "Firebase" },
+            { icon: <FaPython />, name: "FastAPI" },
+            { icon: <SiGooglecloud />, name: "Cloud Run" },
+            { icon: <SiFirebase />, name: "Firestore" },
+          ]}
+        />
+
+        <ProjectItem
           logoImg={Clapperboard}
           projectTitle="Scenerio | AI Video Editor - Hackathon Winner"
           description="Scenerio is a self-improving AI video editor built at a hackathon, winning 1st place in the Gemini API track. It automatically generates a rough cut from raw footage and lets users guide edits in real time through a conversational interface."
@@ -94,27 +120,6 @@ function Projects() {
             { icon: <SiSqlite />, name: "SQLite" },
             { icon: <FaDocker />, name: "Docker" },
             { icon: <SiRabbitmq />, name: "RabbitMQ" },
-          ]}
-        />
-
-        <ProjectItem
-          logoImg="/cedarGlideLogo.svg"
-          projectTitle="CedarGlide Wax | E-Commerce Store"
-          description="CedarGlide Wax is an e-commerce web store dedicated to snowboarding wax products. It features a clean UI for browsing products, adding items to cart, and a smooth checkout experience. Built with modern React tools, it provides responsive design and efficient state management."
-          webLink="https://cedar-glide-wax.vercel.app/"
-          gitLink="https://github.com/kkennethsieu/CedarGlideWax_Front"
-          figmaLink="https://www.figma.com/design/GdllyQknqxn2aK5Fs1cCue/CedarWax-Co.?node-id=25-1340&t=7Uk68eaEZ3JYBhgA-1"
-          tags={[
-            { icon: <RiReactjsLine />, name: "React" },
-            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-            { icon: <RiSupabaseFill />, name: "Supabase" },
-            {
-              icon: <BsStripe />,
-              name: "Stripe",
-            },
-            { icon: <FaNodeJs />, name: "Node.js" },
-            { icon: <SiMui />, name: "Material UI" },
-            { icon: <IoLogoFigma />, name: "Figma" },
           ]}
         />
       </div>
