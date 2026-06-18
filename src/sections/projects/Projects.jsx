@@ -28,7 +28,7 @@ function Projects() {
       <SectionTitle title="Recent Projects" />
       <div className="space-y-6 py-8">
         <ProjectItem
-          logoImg="/scoutLogo.png"
+          logoImg="/scout_logo.png"
           projectTitle="Scout | Photography Location Discovery App"
           description="Scout is a photography location discovery app that helps photographers find exactly where to take their next shot. Think of it like Yelp, but for photo spots. Instead of showing you a landmark and calling it a day, Scout gives you the exact vantage point, real photos taken from that angle, and reviews from photographers who've actually been there. Scout is live on the App Store."
           highlights={[
