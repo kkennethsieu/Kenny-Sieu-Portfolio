@@ -41,7 +41,7 @@ function Projects() {
             "CI/CD pipeline through GitHub Actions handling automated tests and deployment to Cloud Run via Artifact Registry.",
             "Seeded 400+ spots at launch using a data pipeline built on Google Places API and Unsplash to solve the cold start problem.",
           ]}
-          webLink="https://testflight.apple.com/join/13yA34fw"
+          webLink="https://apps.apple.com/us/app/scout-photo-locations/id6781030287"
           gitLink="https://github.com/kkennethsieu/Scout-Overview"
           tags={[
             { icon: <SiSwift />, name: "Swift" },
